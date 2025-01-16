@@ -1336,18 +1336,14 @@
                 <p>$30</p>
                 <button>Buy Now</button>
             </div>
-            <div class="shop-item">
-                <h3>Lightsaber Chopsticks</h3>
-                <img src="Lightsaber.jpeg" alt="LightsaberChopsticks" />
-                <p>Lightsaber sticks</p>
-                <p>$20</p>
-                <button>Buy Now</button>
-            </div>
-            
         </div>
     
         <!-- More Items Section -->
-        
+        <div class="more-items">
+            <button>
+                <h2>More Items...</h2>
+            </button>
+        </div>
     </section>
     
     <style>
@@ -1441,6 +1437,27 @@
             transform: scale(1.1);
         }
     
+        .more-items {
+            text-align: center;
+            margin-top: 30px;
+        }
+    
+        .more-items button {
+            padding: 15px 30px;
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+    
+        .more-items button:hover {
+            background: #000;
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
     </style>
     
     <script>
@@ -1467,7 +1484,6 @@
                 .catch(err => console.error("Failed to fetch shop items", err));
         });
     </script>
-    </section>
     <footer>
         <div class="footer-container">
             <div class="background-overlay"></div>
